@@ -1,0 +1,56 @@
+.container {
+  display: grid;
+  grid-template-columns: (4, 1fr);
+  grid-template-rows: (4, ifr);
+  grid-template-areas:
+    "yellow yellow yellow yellow"
+    "blue orange orange orange"
+    "blue red red red"
+    "blue green green green";
+}
+
+#yellow {
+  grid-area: yellow;
+  height: 140px;
+}
+
+#blue {
+  grid-area: blue;
+  width: 160px;
+}
+
+#orange {
+  grid-area: orange;
+  height: 180px;
+}
+
+#red {
+  grid-area: red;
+}
+
+#green {
+  grid-area: green;
+  height: 170px;
+}
+
+.ulyellow {
+  display: flex;
+  flex-direction: row;
+}
+
+.ulyellow > li {
+  width: 100px;
+}
+
+#one {
+  width: 400px;
+}
+
+.ulred {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.ulred > li {
+  width: 100px;
+}
